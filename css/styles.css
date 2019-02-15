@@ -17,15 +17,92 @@ body {
 	position: fixed;
 	top: 0;
 	height: 40px;
-	background-color: black;
+	background-color: #454545; /* I think we should should keep this color */
 	width: 100%;
+	padding: 0 10px 0 10px;
+}
+
+.nav__container {
+	display: table;
+	height: 100%;
+	width: 100%;	
+}
+
+.nav__cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.nav__poem {
+	cursor: pointer;
+	text-decoration: none;
+	float: left;
+	width: 60px;
+	padding: 11px;
+	border-bottom: 0px solid transparent;
+	transition: 500ms;
+	
+	/* need a new font */
+}
+
+.nav__poem:hover {
+	border-bottom: 2px solid;
+	padding-bottom: 9px;
+}
+
+.nav__poem--poem1 {
+	color:#2656F2; /* pick a color for each poem! */
+}
+
+.nav__poem--poem2 {
+	color:#2656F2; /* pick a color for each poem! */
+}
+
+.nav__poem--poem3 {
+	color:#2656F2; /* pick a color for each poem! */
+}
+
+.nav__poem--poem1:hover {
+	border-color: #2656F2; /* should be the same color as the poem it is associated with */
+}
+
+.nav__poem--poem2:hover {
+	border-color: #2656F2; /* should be the same color as the poem it is associated with */
+}
+
+.nav__poem--poem3:hover {
+	border-color: #2656F2; /* should be the same color as the poem it is associated with */	
+}
+
+.trail {	
+    padding: 0 20px 0 20px;
+    position: fixed;
+	top: 50px;
+	
+    height: 20px;
+    width: 100%;
+}
+
+.trail__divider {
+	display: none;
+}
+
+.trail__divider--active {
+	display: inline-block;
+}
+
+.trail__pt {
+	color: #2656F2; /* probably should be the same as the other links? maybe darker */
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 .storyboard {
+    box-shadow: 0px 0px 20px 5px #404040 inset;
+	display: table;
+	margin: 40px auto 0 auto;
 	height: 100%;
 	width: 100%;
-	margin-top: 40px;
-	display: table;
 }
 
 .storyboard__container {
@@ -34,15 +111,56 @@ body {
 }
 
 .storyboard__message {
-	display: table-cell;
-	margin: 0;
+	display: none;
 	vertical-align: middle;
 	padding-bottom: 20px;
 	text-align: center;
+	font-size: 2em;
+}
+
+.storyboard__content {
+	margin: auto;
+	width: 40%;
+}
+
+.storyboard__message--pt1 {
+	/* specific designs go here */
+}
+
+.storyboard__message--pt2 {
+	/* specific designs go here */
+}
+
+.storyboard__message--pt3 {
+	/* specific designs go here */
+}
+
+.storyboard__message--pt4 {
+	/* specific designs go here */
+}
+
+.storyboard__message--pt5 {
+	/* specific designs go here */
+}
+
+.storyboard__message--active {
+	display: table-cell;
 }
 
 footer {
 	display: block;
 	position: absolute;
 	bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+	.storyboard__content {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.storyboard__content {
+		width: 80%;
+	}
 }

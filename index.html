@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,35 +8,84 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" media="screen" href="./css/styles.css" />
 </head>
+
 <body>
 	<nav class="nav">
 		<div class="nav__container">
-			<a id="poem1" class="nav__poem nav__poem--poem1">Restart</a>
+			<div class="nav__cell">
+				<a id="poem1" class="nav__poem nav__poem--poem1">poem1</a>
+				<a href="#" id="poem2" class="nav__poem nav__poem--poem2">poem2</a>
+				<a href="#" id="poem3" class="nav__poem nav__poem--poem3">poem3</a>
+			</div>
 		</div>
 	</nav>
-	
+
+	<nav class="trail">
+		<div class="trail__divider">
+			<a id="pt1" class="trail__pt">
+				Part 1
+			</a>
+		</div>
+		<div class="trail__divider">
+			<span class="trail__arrow">> </span>
+			<a id="pt2" class="trail__pt">
+				Part 2
+			</a>
+		</div>
+		<div class="trail__divider">
+			<span class="trail__arrow">> </span>
+			<a id="pt3" class="trail__pt">
+				Part 3
+			</a>
+		</div>
+		<div class="trail__divider">
+			<span class="trail__arrow">> </span>
+			<a id="pt4" class="trail__pt">
+				Part 4
+			</a>
+		</div>
+		<div class="trail__divider">
+			<span class="trail__arrow">> </span>
+			<a id="pt5" class="trail__pt">
+				Part 5
+			</a>
+		</div>
+	</nav>
+
 	<section class="storyboard">
 		<section class="storyboard__container">
-			<p class="storyboard__message storyboard__message--pt1 storyboard__message--active">
-				"Water is blue, the sky is dark, I might be thinking, but I'm probably not..."
-			</p>
-			<p class="storyboard__message storyboard__message--pt2">
-				"Poem goes here"
-			</p>
-			<p class="storyboard__message storyboard__message--pt3">
-				"Poem goes here"
-			</p>
-			<p class="storyboard__message storyboard__message--pt4">
-				"Poem goes here"
-			</p>
-			<p class="storyboard__message storyboard__message--pt5">
-				"Poem goes here"
-			</p>
+			<div class="storyboard__message storyboard__message--pt1 storyboard__message--active">
+				<p class="storyboard__content">
+					"Water is blue, the sky is dark, I might be thinking, but I'm probably not..."
+				</p>
+			</div>
+			<div class="storyboard__message storyboard__message--pt2">
+				<p class="storyboard__content">
+					"Water is blue, the sky is dark, I might be thinking, but I'm probably not..."
+				</p>
+			</div>
+			<div class="storyboard__message storyboard__message--pt3">
+				<p class="storyboard__content">
+					"Water is blue, the sky is dark, I might be thinking, but I'm probably not..."
+				</p>
+			</div>
+			<div class="storyboard__message storyboard__message--pt4">
+				<p class="storyboard__content">
+					"Water is blue, the sky is dark, I might be thinking, but I'm probably not..."
+				</p>
+			</div>
+			<div class="storyboard__message storyboard__message--pt5">
+				<p class="storyboard__content">
+					"Water is blue, the sky is dark, I might be thinking, but I'm probably not..."
+				</p>
+			</div>
 		</section>
 	</section>
-	
+
 	<footer>
+		<!-- The author can go down here somewhere -->
 		<script src="./js/script.js"></script>
 	</footer>
 </body>
+
 </html>
