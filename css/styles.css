@@ -1,0 +1,48 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	min-height: 100%;
+	margin: 0;
+}
+
+body {
+	height: calc(100vh - 40px);
+	margin: 0;
+}
+
+.nav {
+	display: block;
+	position: fixed;
+	top: 0;
+	height: 40px;
+	background-color: black;
+	width: 100%;
+}
+
+.storyboard {
+	height: 100%;
+	width: 100%;
+	margin-top: 40px;
+	display: table;
+}
+
+.storyboard__container {
+	height: 100%;
+	display: table-row;
+}
+
+.storyboard__message {
+	display: table-cell;
+	margin: 0;
+	vertical-align: middle;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+footer {
+	display: block;
+	position: absolute;
+	bottom: 0;
+}
