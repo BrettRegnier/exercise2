@@ -8,9 +8,9 @@ function Init()
 	var next_message;
 	story_board.addEventListener("click", function(){
 		counter++;
-		current_message.toggle("storyboard__message--active");
+		current_message.classList.toggle("storyboard__message--active");
 		next_message = document.getElementById("storyboard__message--pt" + counter);
-		next_message.toggle("storyboard__message--active");
+		next_message.classList.toggle("storyboard__message--active");
 		current_message = next_message;
 	}); 
 }
