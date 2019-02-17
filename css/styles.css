@@ -114,15 +114,18 @@ body {
 
 .storyboard__message {
 	display: none;
+	opacity: 0;
 	vertical-align: middle;
 	padding-bottom: 20px;
 	text-align: center;
 	font-size: 2em;
+	transition: opacity 500ms ease-in-out;
 }
 
 .storyboard__content {
 	margin: auto;
 	width: 40%;
+	user-select: none;
 }
 
 .storyboard__content--title {
