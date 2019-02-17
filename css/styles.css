@@ -125,6 +125,10 @@ body {
 	width: 40%;
 }
 
+.storyboard__content--title {
+	font-style: italic;
+}
+
 .storyboard__message--pt1 {
 	/* specific designs go here */
 }
@@ -155,6 +159,19 @@ footer {
 	bottom: 0;
 	right: 15px;
 }
+
+.credit * {
+	display: inline-block;
+}
+
+.credit__title {
+	font-style: italic;
+}
+
+.credit__author {
+		
+}
+
 
 @media only screen and (max-width: 600px) {
 	.storyboard__content {
