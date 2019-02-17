@@ -4,7 +4,7 @@ function Init()
 {
 	var counter = 0;	//Counter for click on story board
 	var story_board = document.getElementById("storyboard");
-	var current_message = document.getElementById("storyboard__message--title");
+	var current_message = document.getElementById("storyboard__message--pt0");
 	var next_message;
 	story_board.addEventListener("click", function(){
 		counter++;
@@ -12,5 +12,7 @@ function Init()
 		next_message = document.getElementById("storyboard__message--pt" + counter);
 		next_message.classList.toggle("storyboard__message--active");
 		current_message = next_message;
+		if(counter == 5)
+			counter = -1;
 	}); 
 }
