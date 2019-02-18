@@ -59,6 +59,26 @@ function Init()
 	}
 }
 
+function SetColor(element){
+	switch(counter){
+		case 1:
+			element.style.color = "#4392f1";
+			break;
+		case 2:
+			element.style.color = "#dc493a";
+			break;
+		case 3:
+			element.style.color = "#3d2645";
+			break;
+		case 4:
+			element.style.color = "#f5ee9e";
+			break;
+		case 5:
+			element.style.color = "#87bba2";
+			break;
+	}
+}
+
 async function DisplayPoem(poemPart)
 {
 	// prevents overlapping clicking
@@ -72,6 +92,8 @@ async function DisplayPoem(poemPart)
 	
 	next_message = document.getElementById("storyboard__message--pt" + poemPart);
 	
+	SetColor(next_message);
+
 	ToggleActive(next_message);
 	await Sleep(FADETIME);
 	next_message.style.opacity = "1";
