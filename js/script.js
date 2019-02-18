@@ -25,6 +25,12 @@ function Init()
 	story_board.addEventListener("click", async function() {
 		if (readyToSwitch)
 		{			
+			// stops the user from overflowing the story parts
+			if (counter == 5)
+			{
+				counter = -1;
+				isRead = true;
+			}
 			counter++;
 			
 			DisplayPoem(counter);
@@ -40,12 +46,6 @@ function Init()
 				}
 			}
 			
-			// stops the user from overflowing the story parts
-			if (counter == 5)
-			{
-				counter = -1;
-				isRead = true;
-			}
 		}
 	}); 
 	
@@ -71,10 +71,10 @@ function SetColor(element){
 			element.style.color = "#3d2645";
 			break;
 		case 4:
-			element.style.color = "#f5ee9e";
+			element.style.color = "#87bba2";
 			break;
 		case 5:
-			element.style.color = "#87bba2";
+			element.style.color = "#edd382";
 			break;
 	}
 }
