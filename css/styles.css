@@ -19,7 +19,7 @@ body {
 	height: 40px;
 	background-color: #454545; /* I think we should should keep this color */
 	width: 100%;
-	padding: 0 10px 0 10px;
+	padding: 0 20px 0 20px;
 }
 
 .nav__container {
@@ -33,47 +33,6 @@ body {
 	vertical-align: middle;
 }
 
-.nav__poem {
-	cursor: pointer;
-	text-decoration: none;
-	float: left;
-	width: 60px;
-	padding: 11px;
-	border-bottom: 0px solid transparent;
-	transition: 500ms;
-	
-	/* need a new font */
-}
-
-.nav__poem:hover {
-	border-bottom: 2px solid;
-	padding-bottom: 9px;
-}
-
-.nav__poem--poem1 {
-	color:#2656F2; /* pick a color for each poem! */
-}
-
-.nav__poem--poem2 {
-	color:#2656F2; /* pick a color for each poem! */
-}
-
-.nav__poem--poem3 {
-	color:#2656F2; /* pick a color for each poem! */
-}
-
-.nav__poem--poem1:hover {
-	border-color: #2656F2; /* should be the same color as the poem it is associated with */
-}
-
-.nav__poem--poem2:hover {
-	border-color: #2656F2; /* should be the same color as the poem it is associated with */
-}
-
-.nav__poem--poem3:hover {
-	border-color: #2656F2; /* should be the same color as the poem it is associated with */	
-}
-
 .trail {	
     padding: 0 20px 0 20px;
     position: fixed;
@@ -85,16 +44,26 @@ body {
 
 .trail__divider {
 	display: none;
+	font-size: 24px;
 }
 
 .trail__divider--active {
 	display: inline-block;
 }
 
+.trail__arrow {
+	color: #f0f0f0;
+}
+
 .trail__pt {
-	color: #2656F2; /* probably should be the same as the other links? maybe darker */
-	text-decoration: underline;
+	color: #81C3D7; 
+	text-decoration: none;
 	cursor: pointer;
+	padding: 0 10px 0 10px;
+}
+
+.trail__pt:hover {
+    border-bottom: 2px solid;
 }
 
 .storyboard {
@@ -135,26 +104,6 @@ body {
 	font-style: italic;
 }
 
-.storyboard__message--pt1 {
-	/* specific designs go here */
-}
-
-.storyboard__message--pt2 {
-	/* specific designs go here */
-}
-
-.storyboard__message--pt3 {
-	/* specific designs go here */
-}
-
-.storyboard__message--pt4 {
-	/* specific designs go here */
-}
-
-.storyboard__message--pt5 {
-	/* specific designs go here */
-}
-
 .storyboard__message--active {
 	display: table-cell;
 }
@@ -172,10 +121,6 @@ footer {
 
 .credit__title {
 	font-style: italic;
-}
-
-.credit__author {
-		
 }
 
 

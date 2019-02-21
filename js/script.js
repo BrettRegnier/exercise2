@@ -62,19 +62,19 @@ function Init()
 function SetColor(element){
 	switch(counter){
 		case 1:
-			element.style.color = "#4392f1";
+			element.style.color = "#4392F1";
 			break;
 		case 2:
-			element.style.color = "#dc493a";
+			element.style.color = "#DC493A";
 			break;
 		case 3:
-			element.style.color = "#3d2645";
+			element.style.color = "#3D2645";
 			break;
 		case 4:
-			element.style.color = "#87bba2";
+			element.style.color = "#87BBA2";
 			break;
 		case 5:
-			element.style.color = "#edd382";
+			element.style.color = "#FFC857";
 			break;
 	}
 }
