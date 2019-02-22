@@ -45,6 +45,7 @@ body {
 .trail__divider {
 	display: none;
 	font-size: 24px;
+	font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 .trail__divider--active {
